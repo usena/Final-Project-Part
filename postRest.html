@@ -38,6 +38,8 @@
                 }
                 else {
                     $("#namecheck").hide();
+                    nameError=true;
+                    return true;
                 }
             }
 
@@ -61,6 +63,8 @@
                 }
                 else {
                     $("#daycheck").hide();
+                    dayError=true;
+                    return true;
                 }
             }
 
@@ -78,6 +82,8 @@
                 }
                 else{
                     $("#openTimecheck").hide();
+                    openError=true;
+                    return true;
                 }
             }
 
@@ -95,6 +101,8 @@
                 }
                 else{
                     $("#closeTimecheck").hide();
+                    closeError=true;
+                    return true;
                 }
             }
 
@@ -118,6 +126,8 @@
                 }
                 else {
                     $("#phonecheck").hide();
+                    phoneError=true;
+                    return true;
                 }
             }
             
@@ -152,6 +162,8 @@
                 }
                 else {
                     $("#descriptioncheck").hide();
+                    descriptionError=true;
+                    return true;
                 }
             }
 
@@ -169,6 +181,8 @@
                 }
                 else {
                     $("#locationcheck").hide();
+                    locationError=true;
+                    return true;
                 }
             }
 
@@ -186,6 +200,8 @@
                 }
                 else{
                     $("#photocheck").hide();
+                    phoneError=true;
+                    return true;
                 }
             }
 
@@ -203,6 +219,8 @@
                 }
                 else{
                     $("#categorycheck").hide();
+                    categoryError=true;
+                    return true;
                 }
             }
 
@@ -227,8 +245,10 @@
                     phoneError==true&&
                     categoryError==true
                 ){
+                    console.log("success")
                     return true;
                 } else{
+                    console.log("failure")
                     return false;
                 }
             });
